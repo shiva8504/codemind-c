@@ -5,11 +5,19 @@ int main()
     scanf("%d",&n);
     for(v=1;v<=n;v++)
     {
-        for(k=1;k<=v;k++)
+        for(k=1;k<=n;k++)
         {
-            printf("%d",k);
+            if(v==k)
+            {
+                printf("0");
+            }
+            else
+            {
+                printf("x");
+            }
         }
         printf("
 ");
     }
+    return 0;
 }
