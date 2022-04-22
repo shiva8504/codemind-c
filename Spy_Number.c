@@ -1,9 +1,9 @@
 #include<stdio.h>
 int main()
 {
-    int n,sum=0,r,p=1;
+    int n,r,p=1,sum=0;
     scanf("%d",&n);
-    for(;n>0;)
+    while(n>0)
     {
         r=n%10;
         sum=sum+r;
@@ -14,9 +14,9 @@ int main()
     {
         printf("Spy Number");
     }
-    else 
+    else
     {
         printf("Not Spy Number");
     }
-    
+
 }
