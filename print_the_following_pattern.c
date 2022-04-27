@@ -7,7 +7,7 @@ int main()
     {
         for(k=r;k>=1;k--)
         {
-            printf("%d ",k);
+            printf("%c ",v+64);
         }
         printf("
 ");
