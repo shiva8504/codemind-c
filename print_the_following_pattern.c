@@ -3,12 +3,18 @@ int main()
 {
     int r,v,k;
     scanf("%d",&r);
-    for(v=r;v>=1;v--)
+    for(v=1;v<=r;v++)
     {
-        for(k=v;k>=1;k--)
-        
+        for(k=1;k<=r;k++)
         {
-            printf("%c ",v+64);
+            if(v+k==r+1 || v-k==0)
+            {
+                printf("x");
+            }
+            else
+            {
+                printf("0");
+            }
         }
         printf("
 ");
