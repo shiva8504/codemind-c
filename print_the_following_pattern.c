@@ -1,23 +1,22 @@
 #include<stdio.h>
 int main()
 {
-    int n,v,k;
+    int i,j,n;
     scanf("%d",&n);
-    for(v=1;v<=n;v++)
+    for(i=1;i<=n;i++)
     {
-        for(k=1;k<=n;k++)
+        for(j=1;j<=n;j++)
         {
-            if(v==k)
+            if(j==1 || i==n || i==j)
             {
-                printf("0");
+                printf("*");
             }
             else
             {
-                printf("x");
+                printf(" ");
             }
         }
         printf("
 ");
     }
-    return 0;
 }
