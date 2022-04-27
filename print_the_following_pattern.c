@@ -3,9 +3,10 @@ int main()
 {
     int r,v,k;
     scanf("%d",&r);
-    for(v=1;v<=r;v++)
+    for(v=r;v>=1;v--)
     {
-        for(k=r;k>=1;k--)
+        for(k=v;k>=1;k--)
+        
         {
             printf("%c ",v+64);
         }
