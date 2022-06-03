@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+	int v[420],s,r,l=0,m=0,n;
+	scanf("%d",&n);	
+	for(s=0;s<n;s++)
+	{
+		scanf("%d",&v[s]);
+	}
+	for(s=0;s<n;s++)
+	{
+		l+=v[s];
+	}
+	r=l/n;
+	for(s=0;s<n;s++)
+	{
+		if(v[s]==r)
+		{
+			m++;
+			break;
+		}
+	}
+	if(m==1)
+	{
+		printf("True");
+	}
+	else
+	{
+		printf("False");
+	}
+	return 0;
+}
