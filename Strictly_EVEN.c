@@ -1,31 +1,23 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,c=0;
+    int v[2004],n,k;
     scanf("%d",&n);
-    int x[n];
-    for(i=0;i<n;i++)
+    for (k=0;k<n;k++)
     {
-        
-        scanf("%d",&x[i]);
+        scanf("%d",&v[k]);
     }
-    for(i=0;i<n;i++)
+    for (k=0;k<n;k++)
     {
-        if(x[i]%2==0)
+        if (v[k]%2==0)
         {
-            if(i%2!=0)
+            if (k%2!=0)
             {
-                c++;
-                break;
+                printf("False");
+                return 0;
             }
         }
     }
-    if(c==0)
-    {
-        printf("True");
-    }
-    else
-    {
-        printf("False");
-    }
+    printf("True");
+    return 0;
 }
