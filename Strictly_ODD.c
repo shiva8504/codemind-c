@@ -1,23 +1,22 @@
 #include<stdio.h>
 int main()
 {
-    int v[20],n,i;
+    int v[2004],n,k;
     scanf("%d",&n);
-    for(i=0;i<n;i++)
+    for (k=0;k<n;k++)
     {
-        scanf("%d",&v[i]);
+        scanf("%d",&v[k]);
     }
-    for(i=0;i<n;i++)
+    for (k=0;k<n;k++)
     {
-        if(v[i]%2!=0)
+        if (v[k]%2!=0)
         {
-            if(i%2==0)
+            if (k%2==0)
             {
                 printf("False");
                 return 0;
             }
         }
-        
     }
     printf("True");
     return 0;
