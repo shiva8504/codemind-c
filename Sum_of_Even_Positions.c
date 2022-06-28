@@ -1,18 +1,18 @@
 #include<stdio.h>
 int main()
 {
-int n,k,v[900],r=0;
-scanf("%d",&n);
-for(k=0;k<n;k++)
-{
-    scanf("%d",&v[k]);
-}
-for(k=n-1;k>=0;k--)
-{
-if(k%2==0)
-{
- r+=v[k];
-}
-}
-printf("%d",r);
+    int n,s,v[100],r;
+    scanf("%d",&n);
+    for(s=0;s<n;s++)
+    {
+        scanf("%d",&v[s]);
+    }
+    for(s=n-1;s>=0;s--)
+    {
+        if(s%2==0)
+        {
+            r+=v[s];
+        }
+    }
+    printf("%d",r);
 }
