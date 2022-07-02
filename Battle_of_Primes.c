@@ -1,35 +1,26 @@
+//kattappa and bahubali
 #include<stdio.h>
-int p(int num)//
-{
-	int i,c=0;
-	for(i=1;i<=num;i++)
-	{
-		if(num%i==0)
-		{
-			c++;	
-		}	
-	}
-	if(c==2)
-	{
-		return 1;
-	}
-	else
-	{
-		return 0;
-	}
-	
-}
 int main()
 {
-    int n1,n2,n3,vk,s;
-    scanf("%d%d",&n1,&n2);
-    s=n1+n2;
-    for(vk=s+1;;vk++)
-    {
-        if(p(vk))
-        {
-            break;
-        }
-    }
-    printf("%d",vk-s);
+	int a,b;
+	scanf("%d%d",&a,&b);
+	int c,count=0,i,j,kills;
+	for (i=1; i>0; i++)
+	{
+		kills=a+b+i;
+		count=0;
+		for (j=1; j<=kills; j++)
+		{
+			if (kills%j==0)
+			{
+				count+=1;
+			}
+		}
+		if (count<=2)
+		{
+			printf("%d",i);
+			break;
+		}
+	}
+	return 0;
 }
