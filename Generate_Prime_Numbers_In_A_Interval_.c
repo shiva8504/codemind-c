@@ -1,22 +1,27 @@
 #include<stdio.h>
 int main()
 {
-    int v,k,i,j,m;
-    scanf("%d %d",&v,&k);
-    for(i=v;i<=k;i++)
+    int a,b;
+    scanf("%d%d",&a,&b);
+    int c=0,i;
+    if (a,b>=1 && a,b<=10000)
     {
-        m=0;
-        for(j=1;j<=i;j++)
+        for (a;a<=b;a++)
         {
-            if(i%j==0)
+            c=0;
+            for (i=2; i<=a; i++)
             {
-                m++;
+                if (a%i==0)
+                {
+                    c++;
+                }
+            }
+            if (c==1)
+            {
+                printf("%d
+",a);
             }
         }
-        if(m==2)
-        {
-            printf("%d
-",i);
-        }
     }
+    return 0;
 }
